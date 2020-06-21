@@ -1,2 +1,9 @@
 source "https://rubygems.org"
-gemspec
+
+# theme
+gem "jekyll-theme-so-simple"
+
+
+#  github pages
+gem "github-pages", group: :jekyll_plugins
+
