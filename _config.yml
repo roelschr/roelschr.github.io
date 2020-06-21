@@ -15,20 +15,20 @@
 # in the templates via {{ site.myvariable }}.
 theme: jekyll-theme-so-simple
 # remote_theme: mmistakes/so-simple-theme
-skin: "/assets/css/skins/default.css"
+skin: "/assets/css/skins/dark.css"
 locale: en-US
-title: "My Awesome Site"
-description: "It really is the best."
-baseurl: # the subpath of your site, e.g. "/blog"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+title: "me, roelschr"
+description: "♪ log of my life!"
+baseurl: ""
+url: "https://roelschr.github.io"
 logo: # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
-read_time: # reading time estimates, e.g. true
-words_per_minute: # 200
+read_time: true
+words_per_minute: 200
 mathjax:
-  enable: # MathJax equations, e.g. true, false (default)
-  combo:  # "tex-svg" (default), "tex-mml-chtml", etc.: docs.mathjax.org/en/latest/web/components/combined.html
-  tags:  # "none", "ams" (default), "all"
+  enable: true
+  combo: "text-svg"
+  tags: "none"
 google_fonts:
   - name: "Source Sans Pro"
     weights: "400,400i,700,700i"
@@ -36,9 +36,9 @@ google_fonts:
     weights: "400,400i,700,700i"
 google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 disqus:
-  shortname: # Disqus shortname, e.g. "my_disqus_shortname"
+  shortname: "roelschr"
 twitter:
-  username: # site's Twitter username, e.g. "mmistakes"
+  username: "roelschr"
 
 # Liquid
 liquid:
@@ -51,15 +51,15 @@ feed:
   path: atom.xml
 
 # Pagination - https://jekyllrb.com/docs/pagination/
-# paginate: 10
-# paginate_path: /page:num/
+paginate: 10
+paginate_path: /page:num/
 
 # Search
 search_full_content: false # can have performance implications for large sites
 
 # Taxonomy pages
-# category_archive_path: "/categories/#"
-# tag_archive_path: "/tags/#"
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -87,14 +87,15 @@ defaults:
       type: posts
     values:
       layout: post
+      comments: true
       share: true
 
 # Site Author
 author:
-  name:
-  picture:
-  email:
-  twitter:
+  name: Igor Hoelscher
+  picture: /images/me.jpg
+  email: igor.hoelscher@gmail.com
+  twitter: roelschr
   links:
     - title:
       url:
